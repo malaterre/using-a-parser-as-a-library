@@ -58,13 +58,13 @@ int lisperror(const char *msg);
 
 [[:space:]]  ; /* ignore */
 
-/* this is a handy rule to return the ASCII value
+ /* this is a handy rule to return the ASCII value
    of any other character. Importantly, parens */
 
 . { return *yytext; }
 Finally, here’s how to call the parser from a regular program.
 
-/* driver_lisp.c */
+ /* driver_lisp.c */
 
 #include <stdio.h>
 #include <stdlib.h>

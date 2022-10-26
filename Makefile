@@ -29,4 +29,4 @@ driver_lisp.o : driver_lisp.c
 # changing the name of the output to .lex.c
 
 lisp.lex.c : lisp.l
-	$(LEX) -t $? > $@
+	$(LEX) --header-file=lisp.lex.h -t $? > $@
